@@ -86,7 +86,7 @@ def pregunta_03():
             # variables categóricas, y no aplica ninguna transformación al resto de
             # las variables.
             (
-                "ColumnTransfomer",
+                "column_transfomer",
                 make_column_transformer(
                     (
                         OneHotEncoder(),
@@ -98,7 +98,7 @@ def pregunta_03():
             # Paso 2: Construya un selector de características que seleccione las K
             # características más importantes. Utilice la función f_regression.
             (
-                "SelectKBest",
+                "selectKBest",
                 SelectKBest(score_func=f_regression),
             ),
             # Paso 3: Construya un modelo de regresión lineal.
